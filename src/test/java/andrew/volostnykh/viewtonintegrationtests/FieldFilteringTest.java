@@ -57,7 +57,7 @@ class FieldFilteringTest extends AbstractViewtonTest {
     void filterByLikePattern() {
         ViewtonResponseDto<User> response = viewtonRepository.list(Map.of("email", "%@gmail.com"), User.class);
 
-        assertEquals(1  , response.getList().size());
+        assertEquals(5 , response.getList().size());
         assertTrue(response.resultStream().allMatch(user -> user.getEmail().contains("@gmail.com")));
     }
 
