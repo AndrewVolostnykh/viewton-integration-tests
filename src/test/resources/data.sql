@@ -6,7 +6,8 @@ CREATE TABLE USERS (
                        LAST_NAME varchar,
                        BIRTHDATE timestamp,
                        EMAIL varchar,
-                       RANDOM_NUMBER bigint
+                       RANDOM_NUMBER bigint,
+                       RANDOM_NUMBER_RESULT float4
 );
 
 INSERT INTO users(FIRST_NAME, LAST_NAME, BIRTHDATE, EMAIL, RANDOM_NUMBER)VALUES ('Stew', 'Doan', '2000-01-20 20:29:20.536783', 'stewdoan@gmail.com', 10);
